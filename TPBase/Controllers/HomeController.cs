@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace Tp_Calculadora.Controllers;
+namespace TP04_Paquetes_Turísticos.Controllers;
 
 public class HomeController : Controller
 {
@@ -9,8 +9,14 @@ public class HomeController : Controller
 
         return View();
     }
-    public IActionResult Calcular (double num1, double num2, char operacion){
-        ViewBag.Resultado = Calculadora.Calcular(num1,num2,operacion);
-        return View("Index");
+    public IActionResult SelectPaquete()
+    {
+
+        return View();
+    }
+    public IActionResult GuardarPaquete(int Destino, int Hotel, int Aereo, int Excursion)
+    {
+
+        return View();
     }
 }

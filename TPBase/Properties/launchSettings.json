@@ -8,7 +8,7 @@
     }
   },
   "profiles": {
-    "Tp_Calculadora": {
+    "TP04_Paquetes_Turísticos": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,

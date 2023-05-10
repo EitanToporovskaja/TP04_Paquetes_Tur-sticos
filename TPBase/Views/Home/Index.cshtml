@@ -1,19 +1,7 @@
 ﻿@{
-    ViewData["Title"] = "Calculadora";
+    ViewData["Title"] = "TP 04 Paquetes Turísticos";
 }
 
 <h1>TP 04 Paquetes Turísticos</h1>
-
-<form action ='@Url.Action("Calcular")'>
-    <input type = "number" name= "num1">
-    <select name="operacion" >
-<option>+</option>
-<option>-</option>
-<option>*</option>
-<option>/</option>
-<option>^</option>
-    </select>
-    <input type="number" name ="num2">
-    <input type="submit" value ="=">
-</form>
-<h3></h3>
+@foreach(string i in ViewBag.imgHotel){
+<img src=@ViewBag.img></img>}

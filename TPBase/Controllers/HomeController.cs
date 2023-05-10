@@ -6,7 +6,7 @@ public class HomeController : Controller
 {
     public IActionResult Index()
     {
-
+        ViewBag.imgHotel=ORTWorld.ListaHoteles;
         return View();
     }
     public IActionResult SelectPaquete()

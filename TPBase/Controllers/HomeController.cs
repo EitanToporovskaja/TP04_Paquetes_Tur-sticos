@@ -6,7 +6,7 @@ public class HomeController : Controller
 {
     public IActionResult Index()
     {
-        ViewBag.paquete=ORTWorld.Paquetes;
+        ViewBag.Paquetes=ORTWorld.Paquetes;
         return View();
     }
     public IActionResult SelectPaquete()
@@ -32,7 +32,7 @@ public class HomeController : Controller
     {
         ViewBag.imgHotel=ORTWorld.ListaHoteles;
         ViewBag.destino=ORTWorld.ListaDestinos;
-        ViewBag.excursion=ORTWorld.ListaExcursiones;
-        ViewBag.aereos=ORTWorld.ListaAereos;
+        ViewBag.imgExcursion=ORTWorld.ListaExcursiones;
+        ViewBag.imgAereos=ORTWorld.ListaAereos;
     }
 }

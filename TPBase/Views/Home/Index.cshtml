@@ -2,6 +2,12 @@
     ViewData["Title"] = "TP 04 Paquetes Turísticos";
 }
 
-<h1>TP 04 Paquetes Turísticos</h1>
-@foreach(string i in ViewBag.imgHotel){
-<img src=@ViewBag.img></img>}
+<p>Ir a seleccionar paquete<a href='@Url.Action("SelectPaquetes")'>aqui</a></p>
+@foreach(string i in ViewBag.Paquetes.keys)
+{
+    <li><h1>@ViewBag.Paquetes[i].Hotel</h1></li>
+    <li><h1>@ViewBag.Paquetes[i].Aereo</h1></li>
+    <li><h1>@ViewBag.Paquetes[i].Excursion</h1></li>
+
+}
+<!-- string i= destino, el cual es la clave por la cual se recorre el diccionario Paquetes->

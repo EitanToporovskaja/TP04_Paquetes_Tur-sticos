@@ -1,0 +1,10 @@
+<form method="get" action="SeleccionDePaquete.html">
+    <p>
+        Destinos:<br>
+       @foreach (string i in ViewBag.Destino)
+        {
+            <input type="radio" name ="Destino" value=@i> @i<br>
+        } 
+    </p>
+    <p><input type="submit" value="Cargar Paquete"></p>
+</form>

@@ -1,7 +1,7 @@
-<form method="get" action="SeleccionDePaquete.html">
+<form action='@Url.Action("GuardarPaquete")'>
     <p>
         Destinos:<br>
-       @foreach (string i in ViewBag.Destino)
+       @foreach (string i in ViewBag.destino)
         {
             <input type="radio" name ="Destino" value=@i> @i<br>
         } 

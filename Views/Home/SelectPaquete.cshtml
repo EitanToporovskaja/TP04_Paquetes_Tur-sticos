@@ -6,5 +6,26 @@
             <input type="radio" name ="Destino" value=@i> @i<br>
         } 
     </p>
-    <p><input type="submit" value="Cargar Paquete"></p>
+    <p>
+        Hoteles:<br>
+       @foreach (string i in ViewBag.imgHotel)
+        {
+            <input type="radio" name ="Hoteles" value=@i><img src="~/img/Hoteles/@i"><br>
+        } 
+    </p>
+    <p>
+        Aereos:<br>
+       @foreach (string i in ViewBag.imgAereos)
+        {
+            <input type="radio" name ="Aereos" value=@i><img src="~/img/Aereos/@i"><br>
+        } 
+    </p>
+    <p>
+        Excursiones:<br>
+       @foreach (string i in ViewBag.imgExcursion)
+        {
+            <input type="radio" name ="Excursiones" value=@i><img src="~/img/Excursiones/@i"><br>
+        } 
+    </p>
+    <p><input type="submit" value="Cacrgar Paquete"></p><br>
 </form>

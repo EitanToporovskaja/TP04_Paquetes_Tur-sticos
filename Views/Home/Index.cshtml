@@ -2,8 +2,8 @@
     ViewData["Title"] = "TP 04 Paquetes Turísticos";
 }
 
-<p>Ir a seleccionar paquete<a href='@Url.Action("SelectPaquetes")'>aqui</a></p>
-@foreach(string i in ViewBag.Paquetes.keys)
+<p>Ir a seleccionar paquete<a href='@Url.Action("SelectPaquete")'>aqui</a></p>
+@foreach(string i in ViewBag.Paquetes.Keys)
 {
     <li><h1>@ViewBag.Paquetes[i].Hotel</h1></li>
     <li><h1>@ViewBag.Paquetes[i].Aereo</h1></li>

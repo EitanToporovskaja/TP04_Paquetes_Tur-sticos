@@ -1,33 +1,33 @@
 <form action='@Url.Action("GuardarPaquete")'>
     <p>
         Destinos:<br>
-       @foreach (string i in ViewBag.destino)
+       @for(int i=0; i<ViewBag.destino.Count; i++)
         {
-            <input type="radio" name ="Destino" value=@i> @i<br>
+            <input type="radio" name ="Destino" value=@i> @ViewBag.destino[i]<br>
         } 
     </p>
     <br>
     <p>
         Hoteles:<br>
-       @foreach (string i in ViewBag.imgHotel)
+       @for (int i=0 ; i<ViewBag.imgHotel.Count ;i++)
         {
-            <input type="radio" name ="Hotel" value=@i><img src="~/img/Hoteles/@i"><br>
+            <input type="radio" name ="Hotel" value=@i><img src="~/img/Hoteles/@ViewBag.imgHotel[i]"><br>
         } 
     </p>
     <br>
     <p>
         Aereos:<br>
-       @foreach (string i in ViewBag.imgAereos)
+       @for (int i=0; i<ViewBag.imgAereos.Count;i++)
         {
-            <input type="radio" name ="Aereo" value=@i><img src="~/img/Aereos/@i"><br>
+            <input type="radio" name ="Aereo" value=@i><img src="~/img/Aereos/@ViewBag.imgAereos[i]"><br>
         } 
     </p>
     <br>
     <p>
         Excursiones:<br>
-       @foreach (string i in ViewBag.imgExcursion)
+       @for (int i=0; i<ViewBag.imgExcursion.Count; i++)
         {
-            <input type="radio" name ="Excursion" value=@i><img src="~/img/Excursiones/@i"><br>
+            <input type="radio" name ="Excursion" value=@i><img src="~/img/Excursiones/@ViewBag.imgExcursion[i]"><br>
         } 
     </p>
     <p><input type="submit" value="Cargar Paquete"></p><br>

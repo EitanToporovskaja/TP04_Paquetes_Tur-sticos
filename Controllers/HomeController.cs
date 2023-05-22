@@ -20,6 +20,7 @@ public class HomeController : Controller
         {
            Paquete p1 = new Paquete(ORTWorld.ListaHoteles[Hotel-1],ORTWorld.ListaAereos[Aereo-1],ORTWorld.ListaExcursiones[Excursion-1]);
            ORTWorld.Paquetes.Add(ORTWorld.ListaDestinos[Destino-1],p1);
+           ViewBag.Paquetes=ORTWorld.Paquetes;
            return View("Index");
         }
         else{

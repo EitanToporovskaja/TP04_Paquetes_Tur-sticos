@@ -11,7 +11,7 @@
         Hoteles:<br>
        @for (int i=0 ; i<ViewBag.imgHotel.Count ;i++)
         {
-            <input type="radio" name ="Hotel" value=@i><img src="~/img/Hoteles/@ViewBag.imgHotel[i]"><br>
+            <input type="radio" name ="Hotel" value=@(i+1)><img src="~/img/Hoteles/@ViewBag.imgHotel[i]"><br>
         } 
     </p>
     <br>
@@ -19,7 +19,7 @@
         Aereos:<br>
        @for (int i=0; i<ViewBag.imgAereos.Count;i++)
         {
-            <input type="radio" name ="Aereo" value=@i><img src="~/img/Aereos/@ViewBag.imgAereos[i]"><br>
+            <input type="radio" name ="Aereo" value=@(i+1)><img src="~/img/Aereos/@ViewBag.imgAereos[i]"><br>
         } 
     </p>
     <br>
@@ -27,7 +27,7 @@
         Excursiones:<br>
        @for (int i=0; i<ViewBag.imgExcursion.Count; i++)
         {
-            <input type="radio" name ="Excursion" value=@i><img src="~/img/Excursiones/@ViewBag.imgExcursion[i]"><br>
+            <input type="radio" name ="Excursion" value=@(i+1)><img src="~/img/Excursiones/@ViewBag.imgExcursion[i]"><br>
         } 
     </p>
     <p><input type="submit" value="Cargar Paquete"></p><br>
